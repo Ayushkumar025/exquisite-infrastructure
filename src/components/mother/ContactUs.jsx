@@ -8,6 +8,11 @@ const ContactUs = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll(".fade-in, .slide-in");
       elements.forEach((el) => {

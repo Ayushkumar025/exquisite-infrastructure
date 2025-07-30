@@ -8,6 +8,10 @@ const AboutUs = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll(".fade-in, .slide-in");
       elements.forEach((el) => {

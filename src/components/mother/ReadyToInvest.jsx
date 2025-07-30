@@ -83,6 +83,11 @@ const ReadyToInvest = ({
   }, []);
 
   useEffect(() => {
+    
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (showTestimonial && testimonials.length > 1) {
       const interval = setInterval(() => {
         setActiveTestimonial((prev) => (prev + 1) % testimonials.length);

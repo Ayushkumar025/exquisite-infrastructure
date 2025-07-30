@@ -7,6 +7,12 @@ import { Footer } from "./Footer";
 import { Navigate, useNavigate } from "react-router-dom";
 
 const Homepage = () => {
+
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll(".fade-in, .slide-in");
