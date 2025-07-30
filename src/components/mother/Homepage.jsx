@@ -143,7 +143,7 @@ const Homepage = () => {
             {/* Entertainment Production Card */}
             <div className="group relative overflow-hidden rounded-2xl shadow-2xl slide-in h-96">
               <a
-                href="https://funny-sfogliatella-321bf4.netlify.app/"
+                href="https://capable-lamington-5ac4a5.netlify.app/"
                 className="group relative overflow-hidden rounded-2xl shadow-2xl slide-in h-96 block"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
@@ -208,7 +208,7 @@ const Homepage = () => {
             {/* Real Estate & Interior Design Card */}
             <div className="group relative overflow-hidden rounded-2xl shadow-2xl slide-in h-96">
               <a
-                href="https://google.com"
+                href="https://joyful-trifle-b0a029.netlify.app/"
                 className="group relative overflow-hidden rounded-2xl shadow-2xl slide-in h-96 block"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
