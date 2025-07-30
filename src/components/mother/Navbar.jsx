@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import Logo from '../../assets/Images/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('Home');
+  const location = useLocation();
 
   // Update navItems to include paths
   const navItems = [
@@ -14,17 +15,21 @@ const Navbar = () => {
     { name: 'Ready To Invest', path: '/ready-to-invest' }
   ];
 
+  // Update active link based on current path
+  useEffect(() => {
+    const currentItem = navItems.find(item => item.path === location.pathname);
+    if (currentItem) {
+      setActiveLink(currentItem.name);
+    }
+  }, [location.pathname]);
+
   return (
     <header className="sticky top-0 w-full z-50 bg-[#111111] py-3 shadow-lg">
-      {/* Golden shimmer line */}
-      {/* <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#f5d648] via-[#ff6700] to-[#f5d648] animate-pulse" /> */}
-
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link
             to="/"
             className="flex items-center group"
-            onClick={() => setActiveLink('Home')}
           >
             <img
               src={Logo}
@@ -45,7 +50,6 @@ const Navbar = () => {
                         ? 'text-[#f5d648]'
                         : 'text-[#ff6700] hover:text-[#f5d648]'
                     }`}
-                    onClick={() => setActiveLink(item.name)}
                   >
                     {item.name}
                     <span
@@ -105,7 +109,6 @@ const Navbar = () => {
                   : 'text-[#f5d648] hover:text-white hover:bg-[#ff6700]/20'
               }`}
               onClick={() => {
-                setActiveLink(item.name);
                 setIsMenuOpen(false);
               }}
             >
