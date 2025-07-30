@@ -12,7 +12,8 @@ export const Footer
                     <div className="mb-6 md:mb-0">
                       <div className="flex items-center">
                         <img src={Logo} className="h-12 mr-2" alt="Exquisite Logo" />
-                        <span className="text-xl font-bold">Exquisite</span>
+                        <span className="text-xl font-bold">Exquisite Infrazone
+</span>
                       </div>
                       <p className="text-gray-500 mt-2">
                         Premium investment opportunities
@@ -110,7 +111,8 @@ export const Footer
                   </div>
                   <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500">
                     <p>
-                      © {new Date().getFullYear()} Exquisite Investments. All rights
+                      © {new Date().getFullYear()} Exquisite Infrazone Pvt Ltd
+. All rights
                       reserved.
                     </p>
                     <p className="mt-2 text-sm">

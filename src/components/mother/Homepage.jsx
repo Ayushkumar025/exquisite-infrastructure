@@ -44,13 +44,13 @@ const Homepage = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6700] to-[#f5d648]">
               Exquisite
             </span>{" "}
-            Investments
+            Infrazone
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl mb-8 max-w-3xl mx-auto fade-in text-gray-700 font-medium">
             Where visionary investors meet exceptional opportunities
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in">
-            <button className="bg-gradient-to-r from-[#ff6700] to-[#f5d648] hover:from-[#e65c00] hover:to-[#e6c642] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#ff6700]/30 flex items-center gap-2">
+            <button onClick={() => navigate("/ready-to-invest")} className="bg-gradient-to-r from-[#ff6700] to-[#f5d648] hover:from-[#e65c00] hover:to-[#e6c642] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#ff6700]/30 flex items-center gap-2">
               Explore Opportunities
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const Homepage = () => {
                 />
               </svg>
             </button>
-            <button className="border-2 border-[#f5d648] hover:bg-[#f5d648]/10 text-gray-800 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+            <button onClick={() => navigate("/contact")} className="border-2 border-[#f5d648] hover:bg-[#f5d648]/10 text-gray-800 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
               Schedule Consultation
               <svg
                 xmlns="http://www.w3.org/2000/svg"
